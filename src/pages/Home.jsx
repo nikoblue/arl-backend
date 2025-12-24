@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Shield, Clock, FileCheck, CreditCard, CheckCircle, Award, Headphones, Sparkles, UserPlus, ClipboardList, MessageCircle, Download, ArrowRight } from 'lucide-react'
+import { Shield, Clock, FileCheck, CreditCard, CheckCircle, Award, Headphones, Sparkles, UserPlus, ClipboardList, MessageCircle, Download, ArrowRight, FileSearch } from 'lucide-react'
 
 function Home() {
   const features = [
@@ -56,6 +56,17 @@ function Home() {
                 <a href="#niveles" className="border-2 border-white text-white font-bold py-4 px-8 rounded-lg hover:bg-white hover:text-arl-blue transition-colors">
                   Ver Niveles de Riesgo
                 </a>
+              </div>
+              
+              {/* Botón Recuperar Documentos */}
+              <div className="mt-6">
+                <Link 
+                  to="/recuperar-documentos" 
+                  className="inline-flex items-center gap-2 text-blue-100 hover:text-white transition-colors text-sm underline underline-offset-4"
+                >
+                  <FileSearch size={18} />
+                  ¿Ya te afiliaste? Recupera tus documentos aquí
+                </Link>
               </div>
             </div>
             <div className="hidden md:flex justify-center">
